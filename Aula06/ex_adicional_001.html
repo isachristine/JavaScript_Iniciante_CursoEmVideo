@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 6 - Exercício Adicional 01</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            font-size: 25px;
+            font-family: 'Lucida Sans Regular';
+            text-align: center;
+            margin-top: 80px;
+        };
+        h1 {
+            color: brown;
+            font-family: sans-serif;
+            font-weight: 500; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Formatação de Moeda</h1>
+    <script>
+        var n1 = Number(window.prompt('Digite um valor: '))
+        real = n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        // Euro hoje: 6,14 em relação ao real
+        // Dólar hoje: 5,07 em relação ao real
+        euro = (n1 * 6.14).toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})
+        dolar = (n1 * 5.07).toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})    
+        document.write(`Você digitou: <strong>${n1}</strong><br>`)
+        document.write(`Convertendo moedas... <br>`)
+        document.write(`Esse valor em reais é ${real}<br>`)
+        document.write(`Esse valor em euros é ${euro}<br>`)
+        document.write(`Esse valor em dólares é ${dolar}<br>`)
+    </script>
+</body>
+</html>

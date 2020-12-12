@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06 - Exercício 03</title>
+    <style>
+        body {
+            background-color: cornsilk;
+            margin-left: 50px;
+            margin-top: 50px;
+            font-weight: bolder;
+        }
+        h1 {
+            font-size: 22px;
+            color: darkslategrey;
+            font-family: Georgia;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tratamento de Dados</h1>
+    <p>Somando 02 números</p>
+    <script>
+        var n1 = Number.parseFloat(window.prompt('Digite um número: '))
+        var n2 = Number.parseFloat(window.prompt('Digite outro número: '))
+        var soma = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`)
+        /* Para o tratamento de dados do exemplo acima, que são números, 
+        temos 03 opções:
+        Number.parseInt() que vai transformar em inteiro
+        Number.parseFloat() que vai transformar em real
+        Number() opção em que o JavaScript vai decidir se 
+        vai tratar como Int ou Float.
+        */
+    </script>
+</body>
+</html>
